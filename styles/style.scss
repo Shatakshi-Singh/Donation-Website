@@ -1,0 +1,83 @@
+$textColor: rgb(12, 12, 12);
+$pageColor : #e4d3cf;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.page {
+  height: 100vh;
+  width: 100vw;
+  background-color: $pageColor;
+  position: relative;
+  color: $textColor;
+  animation: transitionIn 0.5s;
+}
+.logo{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    text-shadow: 0.01rem 0.3rem  darkorchid;
+    background-image: linear-gradient(45deg, #9e9d89 50%,$pageColor 50%);
+    box-shadow: 1rem 1rem 8rem;
+}
+
+.container {
+  background-color: rgb(243, 243, 242);
+  width: 65vw;
+  height: 60vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  width: 30rem;
+  height: 30rem;
+  margin-left: 2rem;
+  filter: drop-shadow(1rem 1rem 1rem black);
+  transition: all 0.3s ease-in-out;
+  border: 0.5rem black;
+  &:hover {
+    width: 31rem;
+  }
+}
+.msg {
+  background-color: #edffec;
+  height: 29rem;
+  animation: transitionIn 0.75s;
+  font-size: 1.6rem;
+}
+@keyframes transitionIn {
+  from {
+    background-color: chocolate;
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+.donate {
+  color: #fff;
+  margin: 120px;
+  &:hover{
+      color: darkgoldenrod;
+  }
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e2bcb7;
+    color: rgb(29, 20, 20);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 1.3rem;
+  }

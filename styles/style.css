@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e4d3cf;
+  position: relative;
+  color: #0c0c0c;
+  -webkit-animation: transitionIn 0.5s;
+          animation: transitionIn 0.5s;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  text-shadow: 0.01rem 0.3rem  darkorchid;
+  background-image: linear-gradient(45deg, #9e9d89 50%, #e4d3cf 50%);
+  -webkit-box-shadow: 1rem 1rem 8rem;
+          box-shadow: 1rem 1rem 8rem;
+}
+
+.container {
+  background-color: #f3f3f2;
+  width: 65vw;
+  height: 60vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.image {
+  width: 30rem;
+  height: 30rem;
+  margin-left: 2rem;
+  -webkit-filter: drop-shadow(1rem 1rem 1rem black);
+          filter: drop-shadow(1rem 1rem 1rem black);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 0.5rem black;
+}
+
+.image:hover {
+  width: 31rem;
+}
+
+.msg {
+  background-color: #edffec;
+  height: 29rem;
+  -webkit-animation: transitionIn 0.75s;
+          animation: transitionIn 0.75s;
+  font-size: 1.6rem;
+}
+
+@-webkit-keyframes transitionIn {
+  from {
+    background-color: chocolate;
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    background-color: chocolate;
+    opacity: 0;
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+.donate {
+  color: #fff;
+  margin: 120px;
+}
+
+.donate:hover {
+  color: darkgoldenrod;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #e2bcb7;
+  color: #1d1414;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=style.css.map */
